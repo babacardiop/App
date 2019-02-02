@@ -13,13 +13,13 @@ export class Tab2Page {
   public options: StreamingVideoOptions = {
     successCallback: () => { console.log('Video played') },
     errorCallback: (e) => { console.log('Error streaming') },
-    orientation: 'landscape',
     shouldAutoClose: true,
-    controls: false
+    controls: true
   };
 
   play(){
-    this.streamingMedia.playVideo('https://path/to/video/stream', this.options);
+    const url = "https://scontent.xx.fbcdn.net/v/t66.18014-6/10000000_1228975280586623_2903346718257632702_n.mp4?_nc_cat=104&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ht=scontent.xx&oh=e2537e593d103bf17d9bcca2ce26f1e5&oe=5CECC7A6";
+    this.streamingMedia.playVideo(url, this.options);
   }
   
 }
