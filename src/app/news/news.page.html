@@ -10,27 +10,52 @@
             </ion-button>
           </ion-buttons>
     <ion-title>
-      Accueil
+      Actualités
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content>
+  <ion-card class="welcome-card">
+      <ion-img src="https://scontent.fymy1-1.fna.fbcdn.net/v/t1.0-9/51124305_950971678441865_402545260061786112_n.jpg?_nc_cat=100&_nc_ht=scontent.fymy1-1.fna&oh=678e85f2f10045c8249ae2fc55b79889&oe=5CB7281B"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>STAY TUNED</ion-card-subtitle>
+        <ion-card-title>Durant tout le week end !</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+        <ion-item></ion-item>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card class="welcome-card">
+      <vg-player>
+        <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+          <source src="https://scontent.xx.fbcdn.net/v/t66.18014-6/10000000_1228975280586623_2903346718257632702_n.mp4?_nc_cat=104&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ht=scontent.xx&oh=e2537e593d103bf17d9bcca2ce26f1e5&oe=5CECC7A6" type="video/mp4">
+        </video>
+      </vg-player>
+        <ion-card-header>
+          <ion-card-subtitle>STAY TUNED</ion-card-subtitle>
+          <ion-card-title>Durant tout le week end !</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>La campagne Bokk NA</p>
+        </ion-card-content>
 
-
-      <ion-grid>
-          <ion-row>
-            <ion-col>
-                <ion-img src="assets/img/agenda.png"></ion-img>
-            </ion-col>
-            <ion-col>
-                <ion-img src="assets/img/program.png"></ion-img>
-            </ion-col>
-          </ion-row>
-          <ion-row>
-              <ion-col>
-                  <ion-img src="assets/img/vote.png"></ion-img>
-              </ion-col>
-            </ion-row>
-        </ion-grid>
+        <ion-chip>
+          <ion-icon name="pin" color="primary"></ion-icon>
+          <ion-label>Icon Chip</ion-label>
+          <ion-icon name="close"></ion-icon>
+        </ion-chip>
+        
+        <ion-chip>
+          <ion-avatar>
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          </ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-card>  
 </ion-content>
