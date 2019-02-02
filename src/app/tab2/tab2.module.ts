@@ -5,12 +5,17 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab2Page } from './tab2.page';
 
+import { StreamingMedia } from '@ionic-native/streaming-media/ngx';
+
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
     RouterModule.forChild([{ path: '', component: Tab2Page }])
+  ],
+  providers: [
+    StreamingMedia
   ],
   declarations: [Tab2Page]
 })
